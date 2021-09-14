@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+    padding: 200px;
+    justify-content: center;
+    align-items: baseline;
+    background:black;
+    
+}
+
+.netflix{
+    position: relative;
+    width: 360px;
+    height: 520px;
+    
+}
+.netflix::before{
+ position:absolute;
+content: '';
+left: 0;
+bottom: -100px;
+background: rgb(0, 0, 0);
+height: 120px;
+width: 100%;
+z-index: 0;
+border-top-left-radius: 100%;
+border-top-right-radius: 100%;
+transform: scaleX(1.5); 
+}
+.netflix span{
+    position:absolute;
+    top: 0;
+ width: 120px;
+    height: 100%;
+    background-color: red;
+}
+.netflix span:nth-of-type(1){
+    background-color: #b00612;
+    left: 0%;
+}
+.netflix span:nth-of-type(2){
+    background: #e50815;
+    z-index: 1;
+    transform-origin: top;
+    transform: skewX(24.8deg);
+    box-shadow: 0 0 40px
+    rgba(0,0,0,1);
+}
+.netflix span:nth-of-type(3){
+    background:#b00612;
+    right: 0px;
+}
+h3{
+    position: absolute;
+    margin: 20px;
+    padding:0;
+    text-align: center;
+ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    transition: 1s;
+    transition-timing-function:linear;
+}
